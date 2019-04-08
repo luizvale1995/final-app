@@ -1,11 +1,11 @@
 import React from 'react'
-import Aux from '../../../roc/Aux'
+import './Button.css'
 
 const button = (props) => {
     return (
-    <Aux>
-        <button onClick={props.click}>Click Here to vote {props.age}</button>
-    </Aux> )
+    <div>
+        <button onClick={props.click} className = "styleButton">Click Here to vote</button>
+    </div> )
 }
 
 export default button

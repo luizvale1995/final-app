@@ -1,37 +1,8 @@
-.paramsPhotos {
-        width: 20px;
-        margin: auto;
-        height: 20px;
-        overflow: scroll;
-        text-align: center;
-        font-weight: bold;
-        font-size: 1.2rem;
-}
-
-@media(min-width: 500px) and (min-height: 378px) {
-    .paramsPhotos {
-
-        width: 70px;
-        margin: auto;
-        height: 70px;
-        overflow: scroll;
-        text-align: center;
-        font-weight: bold;
-        font-size: 2.2rem;
-
-    }
-}
-
-@media(min-width: 780px) and (min-height: 800px) {
-    .paramsPhotos {
-
-        width: 120px;
-        margin: auto;
-        height: 120px;
-        overflow: scroll;
-        text-align: center;
-        font-weight: bold;
-        font-size: 2.2rem;
-
-    }
+.Photos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 150%;
+    margin: auto;
+    
 }
