@@ -19,15 +19,6 @@ class PhotosBuilder extends Component {
 
     }
 
-    async onLikeSubmit(term) {
-        const response = await ImagesAPI.post('/photos/:id/like', {
-            params: {query: term}
-        });
-        console.log(response)
-
-    }
-
-
 
     render () {
         return (
