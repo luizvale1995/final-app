@@ -10,7 +10,7 @@ class Search extends React.Component {
   };
   
  // this.onFormSbmit only makes a reference for a method. 
- // If you use parenthesis in the end (this.onFormSubmit()), the function will be called when you render the page. 
+ // If you use parentheses in the end (this.onFormSubmit()), the function will be called when you render the page. 
   
  render() {
     return (

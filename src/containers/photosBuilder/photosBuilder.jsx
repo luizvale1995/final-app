@@ -6,8 +6,6 @@ import Search from '../../components/Search/Search'
 import Photos from '../../components/Photos/Photos'
 import './photosBuilder.css'
 
-// Photos Controls envia a imagem para a ába de fotos curtidas
-// Photos Grid estrutura e organiza as imagens
 
 class PhotosBuilder extends Component {
 
@@ -18,6 +16,14 @@ class PhotosBuilder extends Component {
             params: {query: term}
         });
         this.setState({photos: response.data.results})
+
+    }
+
+    async onLikeSubmit(term) {
+        const response = await ImagesAPI.post('/photos/:id/like', {
+            params: {query: term}
+        });
+        console.log(response)
 
     }
 
